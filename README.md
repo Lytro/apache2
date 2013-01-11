@@ -168,6 +168,7 @@ General settings
 These are general settings used in recipes and templates. Default
 values are noted.
 
+* `node['apache']['start_service']` - Tells the default recipe whether or not to start Apache2.
 * `node['apache']['listen_ports']` - Ports that httpd should listen on. Default is an array of port 80.
 * `node['apache']['contact']` - Value for ServerAdmin directive. Default "ops@example.com".
 * `node['apache']['timeout']` - Value for the Timeout directive. Default is 300.
