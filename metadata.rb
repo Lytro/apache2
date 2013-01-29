@@ -81,11 +81,16 @@ attribute "apache/icondir",
   :description => "Directory location for icons",
   :default => "/usr/share/apache2/icons"
 
+attribute "apache/start_service",
+  :display_name => "Start Apache Service",
+  :description => "If true, starts the Apache service at the end of the default recipe",
+  :default => "true"
+
 attribute "apache/listen_ports",
   :display_name => "Apache Listen Ports",
   :description => "Ports that Apache should listen on",
   :type => "array",
-  :default => ["80", "443"]
+  :default => ["80"]
 
 attribute "apache/contact",
   :display_name => "Apache Contact",

@@ -220,4 +220,6 @@ end
 
 service "apache2" do
   action :start
+
+  only_if { node['apache']['start_service'] }
 end

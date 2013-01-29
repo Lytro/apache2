@@ -103,6 +103,7 @@ end
 ###
 
 # General settings
+default['apache']['start_service'] = true
 default['apache']['listen_ports'] = ["80"]
 default['apache']['contact'] = "ops@example.com"
 default['apache']['timeout'] = 300
